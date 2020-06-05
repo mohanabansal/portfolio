@@ -1,0 +1,133 @@
+@media screen and (max-width: 992px) {
+  .navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #0f1b0e;
+    color: #94ecbe;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburgerOpen {
+    position: absolute;
+    right: 10px;
+    top: 19%;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #94ecbe;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .hamburgerOpen .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 2px);
+  }
+
+  .hamburgerOpen .bar2 {
+    opacity: 0;
+  }
+
+  .hamburgerOpen .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -4px);
+  }
+
+  .menu {
+    z-index: 4;
+  }
+
+  /* .menu {
+    background-color: #0F1B0E;
+    overflow: auto;
+    width: 100%;
+  } */
+
+  /* .menu a{ */
+  /* width: 100%;
+    right: -10px;
+    position: absolute;
+    background-color: #0F1B0E;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; */
+  /* } */
+
+  /* Style the navigation menu */
+  /* .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+} */
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* .topnav #myLinks {
+  display: none;
+} */
+
+  /* Style navigation menu links */
+  /* .topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+} */
+
+  /* Style the hamburger menu */
+  /* .topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+
+  /* Add a grey background color on mouse-over */
+  /* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+  /* Style the active link (or home/logo) */
+  /* .active {
+  background-color: #4CAF50;
+  color: white;
+} */
+  ul {
+    list-style-type: none;
+    background-color: #0f1b0e;
+    color: #94ecbe;
+    margin: 0;
+    padding-top: 45px;
+  }
+
+  li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: #0f1b0e;
+  color: #94ecbe;
+  position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  display: none;
+}
+
+ul {
+}
