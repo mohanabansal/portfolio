@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.name-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.name {
+  font-size: 60px;
+  margin: 0;
+}
+
+.designation {
+  width: 304px;
+  margin-top: 0px;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(15), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 304px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+p {
+  line-height: 1.5em;
+}

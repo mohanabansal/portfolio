@@ -6,16 +6,14 @@ import React from 'react'
 
 // import Navbar from './components/navbar'
 
-// import Home from './components/home'
-import Navbar from './components/navbar/index'
+import Home from './components/home'
 
 const App = () => {
   return (
     <div>
       {/* <Navbar />
       <Routes /> */}
-      {/* <Home /> */}
-      <Navbar />
+      <Home />
       {/* <Navbar /> */}
     </div>
   )
