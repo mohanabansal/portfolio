@@ -21,33 +21,63 @@ const Navbar = () => {
     //     )}
     //   </div>
     // </div>
-    <div className="navbar">
-      <div
-        className={navbarOpen ? 'hamburgerOpen' : 'hamburger'}
-        onClick={() => setNavbar(!navbarOpen)}
-      >
-        <div className="bar1" />
-        <div className="bar2" />
-        <div className="bar3" />
-      </div>
-      {navbarOpen && (
-        <div className="menu">
-          <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Projects</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-            <li>
-              <a>Connect</a>
-            </li>
-          </ul>
+    // <div className="navbar">
+    //   <div
+    //     className={navbarOpen ? 'hamburgerOpen' : 'hamburger'}
+    //     onClick={() => setNavbar(!navbarOpen)}
+    //   >
+    //     <div className="bar1" />
+    //     <div className="bar2" />
+    //     <div className="bar3" />
+    //   </div>
+    //   {/* {navbarOpen && ( */}
+    //     <div className="menu">
+    //       <ul>
+    //         <li>
+    //           <a>Home</a>
+    //         </li>
+    //         <li>
+    //           <a>Projects</a>
+    //         </li>
+    //         <li>
+    //           <a>Contact</a>
+    //         </li>
+    //         <li>
+    //           <a>Connect</a>
+    //         </li>
+    //       </ul>
+    //     </div>
+    //   {/* )} */}
+    // </div>
+    <div>
+      <nav>
+        <div className="logo">Logo</div>
+        <ul className={navbarOpen ? 'nav-active' : 'nav-links'}>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+          <li>
+            <a>Connect</a>
+          </li>
+        </ul>
+        <div
+          className={!navbarOpen ? 'burger' : 'burgerClose'}
+          onClick={() => setNavbar(!navbarOpen)}
+        >
+          <div className="line1" />
+          <div className="line2" />
+          <div className="line3" />
         </div>
-      )}
+      </nav>
     </div>
   )
 }

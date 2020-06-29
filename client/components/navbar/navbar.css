@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 768px) {
   .navbar {
     width: 100%;
     height: 40px;
@@ -42,64 +42,6 @@
     z-index: 4;
   }
 
-  /* .menu {
-    background-color: #0F1B0E;
-    overflow: auto;
-    width: 100%;
-  } */
-
-  /* .menu a{ */
-  /* width: 100%;
-    right: -10px;
-    position: absolute;
-    background-color: #0F1B0E;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block; */
-  /* } */
-
-  /* Style the navigation menu */
-  /* .topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-} */
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  /* .topnav #myLinks {
-  display: none;
-} */
-
-  /* Style navigation menu links */
-  /* .topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-} */
-
-  /* Style the hamburger menu */
-  /* .topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
-
-  /* Add a grey background color on mouse-over */
-  /* .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
-  /* Style the active link (or home/logo) */
-  /* .active {
-  background-color: #4CAF50;
-  color: white;
-} */
   ul {
     list-style-type: none;
     background-color: #0f1b0e;
@@ -115,19 +57,126 @@
   }
 }
 
-.navbar {
-  width: 100%;
-  height: 40px;
-  background-color: #0f1b0e;
-  color: #94ecbe;
-  position: relative;
+@media screen and (min-width: 769px) {
+
+  .navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #0f1b0e;
+    color: #94ecbe;
+    position: relative;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  display: none;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #0f1b0e;
+  color: #baf3d5;
+}
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 
 ul {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div,
+.burgerClose div {
+  width: 25px;
+  height: 5px;
+  background-color: #baf3d5;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    background-color: #0f1b0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  li a {
+    padding: 5px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  position: absolute;
+  right: 0px;
+  top: 8vh;
+  background-color: #0f1b0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in;
+}
+
+.burgerClose .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.burgerClose .line2 {
+  opacity: 0;
+}
+
+.burgerClose .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
