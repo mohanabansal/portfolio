@@ -16,6 +16,30 @@ const Home = () => {
           Bootcamp and having successfully completed it, I am ready to join a
           firm that is looking for collaborative and passionate developers.
         </p>
+
+        <div className="techstack">
+          <h2>Technologies I am into</h2>
+          <p>
+            <span className="tech-heading">Language: </span>
+            JavaScript(ES6)
+          </p>
+          <p>
+            <span className="tech-heading">Frontend: </span>
+            React.js, Redux, HTML, CSS
+          </p>
+          <p>
+            <span className="tech-heading">Backend: </span>
+            Node.js, Express, Sequelize, PostgresSQL, RESTful API
+          </p>
+          <p>
+            <span className="tech-heading">DevOps: </span>
+            Heroku, TDD(Jest, Enzyme)
+          </p>
+          <p>
+            <span className="tech-heading">Tools: </span>
+            GIT, GitHub, npm, Visual Studio Code, Postman, Postico
+          </p>
+        </div>
       </div>
     </div>
   )

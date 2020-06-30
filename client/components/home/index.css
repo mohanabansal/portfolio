@@ -27,7 +27,7 @@ img {
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(15), blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(19), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -51,4 +51,23 @@ img {
 
 p {
   line-height: 1.5em;
+}
+
+h2 {
+  margin: 0;
+}
+
+.techstack h2 {
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.techstack p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.tech-heading {
+  font-weight: bold;
 }
