@@ -1,5 +1,8 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #17323a;
+  margin: 30px;
+  color: #efffeb;
 }
 
 a {
@@ -18,4 +21,10 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.heading {
+  color: #d8973c;
+  font-size: 60px;
+  margin: 0;
 }
