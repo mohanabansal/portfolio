@@ -1,8 +1,8 @@
 import React from 'react'
 // import {HashLink as Link} from 'react-router-hash-link'
-import {FaLinkedin} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
-import {FaRegEnvelopeOpen} from 'react-icons/fa'
+import {FaLinkedin, FaGithub, FaRegEnvelopeOpen} from 'react-icons/fa'
+// import {FaGithub} from 'react-icons/fa'
+// import {FaRegEnvelopeOpen} from 'react-icons/fa'
 
 import './index.css'
 
