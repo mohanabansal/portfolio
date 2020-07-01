@@ -1,5 +1,7 @@
 import React from 'react'
 // import {HashLink as Link} from 'react-router-hash-link'
+import {FaLinkedin} from 'react-icons/fa'
+
 import './index.css'
 
 const Contact = () => {
@@ -14,8 +16,14 @@ const Contact = () => {
         <br />
         You can find on either of the following platform:{' '}
       </p>
-      <a href="https://www.linkedin.com/in/mohanabansal/" target="_blank" />
-      <a href="https://github.com/mohanabansal/" target="_blank" />
+
+      <a href="" target="_blank">
+        <FaLinkedin className="linkedIn" />
+      </a>
+
+      {/* <span><FontAwesomeIcon icon={['fab', 'github']} /><a href="https://github.com/KuroiiJ"> GitHub </a></span> */}
+
+      {/* <a href="https://github.com/mohanabansal/" target="_blank" /> */}
     </div>
   )
 }
