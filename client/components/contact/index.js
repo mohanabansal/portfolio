@@ -1,6 +1,8 @@
 import React from 'react'
 // import {HashLink as Link} from 'react-router-hash-link'
 import {FaLinkedin} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
+import {FaRegEnvelopeOpen} from 'react-icons/fa'
 
 import './index.css'
 
@@ -16,10 +18,20 @@ const Contact = () => {
         <br />
         You can find on either of the following platform:{' '}
       </p>
-
-      <a href="" target="_blank">
-        <FaLinkedin className="linkedIn" />
-      </a>
+      <div className="social-media">
+        <a href="https://www.linkedin.com/in/mohanabansal/" target="_blank">
+          <FaLinkedin className="linkedIn" />
+          <span>LinkedIn</span>
+        </a>
+        <a href="http://github.com/mohanabansal/" target="_blank">
+          <FaGithub className="github" />
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:mohanabansal10@gmail.com" target="_blank">
+          <FaRegEnvelopeOpen className="email" />
+          <span>Email</span>
+        </a>
+      </div>
 
       {/* <span><FontAwesomeIcon icon={['fab', 'github']} /><a href="https://github.com/KuroiiJ"> GitHub </a></span> */}
 

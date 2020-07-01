@@ -20,10 +20,47 @@
 .contact-description {
   font-size: 19px;
   margin: 25px 268px;
+  text-align: center;
 }
 
-.linkedIn {
-  background-color: #bb7d25;
-  color: #efffeb;
+.linkedIn,
+.github,
+.email {
+  /* background-color: #bb7d25; */
+  /* color: #efffeb; */
   font-size: 28px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #d8973c;
+  margin-right: 35px;
+}
+
+a span {
+  vertical-align: super;
+  padding-left: 5px;
+  color: #efffeb;
+}
+
+a span:hover {
+  color: #d8973c;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-description {
+    margin: 25px 163px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-description {
+    margin: 25px 15%;
+  }
 }
