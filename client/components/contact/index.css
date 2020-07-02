@@ -10,3 +10,20 @@
   width: 180px;
   background-color: #cb0f5d;
 } */
+
+.contact-subheading {
+  color: #efd2a9;
+  text-align: center;
+  font-size: 32px;
+}
+
+.contact-description {
+  font-size: 19px;
+  margin: 25px 268px;
+}
+
+.linkedIn {
+  background-color: #bb7d25;
+  color: #efffeb;
+  font-size: 28px;
+}
