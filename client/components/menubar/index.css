@@ -1,18 +1,32 @@
 #menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 60px;
   width: 100%;
   background-color: #d8973c;
   margin-bottom: 35px;
   font-size: 19px;
   text-align: end;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
 }
 
-#menu span {
-  margin-right: 20px;
+/* #menu span {
   line-height: 60px;
   vertical-align: middle;
+} */
+
+#menu a {
+  color: #17323a;
 }
 
-#menu span a {
-  color: #17323a;
+#menu a:hover {
+  text-decoration: underline;
+  color: #efffeb;
+}
+
+html {
+  scroll-behavior: smooth;
 }
