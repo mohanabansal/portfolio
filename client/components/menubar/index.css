@@ -9,8 +9,10 @@
 
 #menu span {
   margin-right: 20px;
+  line-height: 60px;
+  vertical-align: middle;
 }
 
 #menu span a {
-  color: #efffeb;
+  color: #17323a;
 }
