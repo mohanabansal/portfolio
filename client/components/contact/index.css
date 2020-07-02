@@ -1,15 +1,7 @@
 #contact .heading {
-  margin-top: 50px;
+  margin: 75px 30px 0 30px;
   text-align: center;
-  /* text-decoration: underline;
-  text-decoration-color: orange; */
 }
-
-/* .bar {
-  height: 3px;
-  width: 180px;
-  background-color: #cb0f5d;
-} */
 
 .contact-subheading {
   color: #efd2a9;
@@ -26,8 +18,6 @@
 .linkedIn,
 .github,
 .email {
-  /* background-color: #bb7d25; */
-  /* color: #efffeb; */
   font-size: 28px;
 }
 
