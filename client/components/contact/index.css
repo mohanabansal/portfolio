@@ -34,6 +34,7 @@
 .social-media {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 a {
@@ -55,12 +56,12 @@ a span:hover {
 
 @media only screen and (max-width: 1024px) {
   .contact-description {
-    margin: 25px 163px;
+    margin: 25px 9%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .contact-description {
-    margin: 25px 15%;
+    margin: 25px 9%;
   }
 }
