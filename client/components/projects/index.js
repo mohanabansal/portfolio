@@ -36,8 +36,11 @@ const Projects = () => {
         </div>
       </div>
       <div className="meta-data">
-        <div>
-          <a>Checkout Project</a>
+        <div className="buttons">
+          <button type="button" className="raise">
+            <a>Checkout Project</a>
+          </button>
+
           <a>Visit GitHub</a>
         </div>
       </div>

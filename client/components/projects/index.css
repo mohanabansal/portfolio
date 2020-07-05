@@ -25,13 +25,8 @@
   padding-right: 10px;
 }
 
-.meta-data a:before {
-  position: absolute;
-  width: 45px;
-  height: 1.5px;
-  background: #374341;
-  content: '';
-  opacity: 0.2;
-  transition: all 0.3s;
-  pointer-events: none;
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
