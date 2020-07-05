@@ -36,12 +36,10 @@ const Projects = () => {
         </div>
       </div>
       <div className="meta-data">
-        <div className="buttons">
-          <button type="button" className="raise">
-            <a>Checkout Project</a>
+        <div className="links">
+          <button type="button" className="btn">
+            Visit Website<span></span>
           </button>
-
-          <a>Visit GitHub</a>
         </div>
       </div>
     </div>
