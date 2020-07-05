@@ -11,5 +11,27 @@
 }
 
 .project-description {
+  display: flex;
   text-align: left;
+}
+
+.project-description img {
+  border-radius: 0;
+  height: 370px;
+  width: 450px;
+}
+
+.description {
+  padding-right: 10px;
+}
+
+.meta-data a:before {
+  position: absolute;
+  width: 45px;
+  height: 1.5px;
+  background: #374341;
+  content: '';
+  opacity: 0.2;
+  transition: all 0.3s;
+  pointer-events: none;
 }
