@@ -36,7 +36,7 @@ a {
 a span {
   vertical-align: super;
   padding-left: 5px;
-  color: #efffeb;
+  /* color: #efffeb; */
 }
 
 a span:hover {
