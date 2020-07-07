@@ -1,26 +1,62 @@
 import React from 'react'
+import data from '../../data'
 import './index.css'
 
 const Projects = () => {
   return (
     <div id="projects">
       <h1 className="heading">Projects</h1>
-      <h1 className="title">Diagon-E-lley</h1>
-      <div className="project-description">
+      {data.map((project) => {
+        console.log(project.title)
+        return (
+          <div key={project.id}>
+            <h1 className="title">{project.title}</h1>
+            <div className="project-description">
+              <div className="description">
+                <p>{project.description}</p>
+                <span className="tech">
+                  <p>
+                    {project.tech.map((tech) => {
+                      return <span>{tech}</span>
+                    })}
+                    {/* <span>ReactJS</span>
+                    <span>Redux</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>Sequelize</span>
+                    <span>PostgresSQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span> */}
+                  </p>
+                </span>
+                <p></p>
+              </div>
+              <div>
+                <img src={project.img} />
+                <div className="links">
+                  <button type="button" className="btn">
+                    <a href={project.website} target="_blank">
+                      Visit Website
+                    </a>
+                    <span></span>
+                  </button>
+                  <button type="button" className="btn">
+                    <a href={project.github} target="_blank">
+                      View GitHub
+                    </a>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        )
+      })}
+      {/* <h1 className="title">Diagon-E-lley</h1> */}
+      {/* <div className="project-description">
         <div className="description">
-          {/* <div className = "heading-and-links"> */}
-
-          {/* <div className="links">
-              <button type="button" className="btn">
-                <a>Visit Website</a>
-                <span></span>
-              </button>
-              <button type="button" className="btn">
-                <a>GitHub</a>
-                <span></span>
-              </button>
-            </div> */}
-          {/* </div> */}
           <p>
             A one stop shop for your next year essentials at Hogwarts School of
             Witchcraft and Wizardry
@@ -49,12 +85,6 @@ const Projects = () => {
               <span>CSS</span>
             </p>
           </span>
-          {/* <p>
-            Logged-in users can update their profile, have cart automatically
-            sync among multiple clients, have cart be saved after logout,
-            receive a purchase confirmation email, view previous purchase
-            history
-          </p> */}
           <p></p>
         </div>
         <div>
@@ -78,21 +108,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* <div className="tech">
-        <p>
-          Technologies used: <span>ReactJS</span>
-          <span>Redux</span>
-          <span>JavaScript</span>
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>Sequelize</span>
-          <span>PostgresSQL</span>
-          <span>HTML</span>
-          <span>CSS</span>
-        </p>
-      </div> */}
-      <div className="meta-data"></div>
-      <hr />
+      <hr /> */}
     </div>
   )
 }
