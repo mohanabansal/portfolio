@@ -33,7 +33,8 @@ img {
   width: 290px;
   margin-top: 0px;
   overflow: hidden;
-  color: #efd2a9;
+  /* color: #efd2a9; */
+  color: #3f5d8d;
   border-right: 0.15em solid orange;
   white-space: nowrap;
   margin: 0;
