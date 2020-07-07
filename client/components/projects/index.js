@@ -29,18 +29,18 @@ const Projects = () => {
               <div>
                 <img src={project.img} />
                 <div className="links">
-                  <button type="button" className="btn">
-                    <a href={project.website} target="_blank">
+                  <a href={project.website} target="_blank">
+                    <button type="button" className="btn">
                       Visit Website
-                    </a>
-                    <span></span>
-                  </button>
-                  <button type="button" className="btn">
-                    <a href={project.github} target="_blank">
+                      <span></span>
+                    </button>
+                  </a>
+                  <a href={project.github} target="_blank">
+                    <button type="button" className="btn">
                       View GitHub
-                    </a>
-                    <span></span>
-                  </button>
+                      <span></span>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

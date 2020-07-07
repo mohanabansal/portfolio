@@ -38,6 +38,21 @@ const data = [
       'CSS',
     ],
     img: '/replroom.png',
+    website: 'http://replroom.herokuapp.com/',
+    github: 'https://github.com/Ronettes/REPLroom',
+  },
+  {
+    id: 3,
+    title: 'Portfolio',
+    description: 'Personal website',
+    tech: [
+      'ReactJS',
+      'Redux',
+      'JavaScript',
+      'Mobile first development',
+      'HTML',
+      'CSS',
+    ],
   },
 ]
 
