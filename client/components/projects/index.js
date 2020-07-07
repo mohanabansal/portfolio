@@ -7,29 +7,23 @@ const Projects = () => {
     <div id="projects">
       <h1 className="heading">Projects</h1>
       {data.map((project) => {
-        console.log(project.title)
         return (
           <div key={project.id}>
             <h1 className="title">{project.title}</h1>
             <div className="project-description">
               <div className="description">
                 <p>{project.description}</p>
-                <span className="tech">
-                  <p>
-                    {project.tech.map((tech) => {
-                      return <span>{tech}</span>
-                    })}
-                    {/* <span>ReactJS</span>
-                    <span>Redux</span>
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>Sequelize</span>
-                    <span>PostgresSQL</span>
-                    <span>HTML</span>
-                    <span>CSS</span> */}
-                  </p>
-                </span>
+                <div className="tech">
+                  {/* <p> */}
+                  {project.tech.map((tech) => {
+                    return (
+                      <div>
+                        <span>{tech}</span>
+                      </div>
+                    )
+                  })}
+                  {/* </p> */}
+                </div>
                 <p></p>
               </div>
               <div>

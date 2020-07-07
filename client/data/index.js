@@ -19,6 +19,26 @@ const data = [
     website: 'https://diagon-e-lley.herokuapp.com/',
     github: 'https://github.com/Rosalina-and-luma/grace-shopper',
   },
+  {
+    id: 2,
+    title: 'REPLroom',
+    description:
+      'A real-time coding and whiteboarding environment designed for collaborative development and remote interviewing. REPLroom features a code sandbox where you can work with others to write and evaluate Javascript code. To facilitate collaboration, the app also includes a whiteboard space to diagram ideas, as well as text and video chat components all built into the same platform.',
+    tech: [
+      'ReactJS',
+      'Redux',
+      'JavaScript',
+      'WebWorker',
+      'CodeMirror',
+      'Esprima',
+      'Escodegen',
+      'Socket.io',
+      'Opentok',
+      'HTML',
+      'CSS',
+    ],
+    img: '/replroom.png',
+  },
 ]
 
 export default data
