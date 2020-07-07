@@ -61,11 +61,18 @@ const Projects = () => {
           <img src="/diagonmockupnew.png" />
           <div className="links">
             <button type="button" className="btn">
-              <a>Visit Website</a>
+              <a href="https://diagon-e-lley.herokuapp.com/" target="_blank">
+                Visit Website
+              </a>
               <span></span>
             </button>
             <button type="button" className="btn">
-              <a>GitHub</a>
+              <a
+                href="https://github.com/Rosalina-and-luma/grace-shopper"
+                target="_blank"
+              >
+                View GitHub
+              </a>
               <span></span>
             </button>
           </div>
@@ -85,6 +92,7 @@ const Projects = () => {
         </p>
       </div> */}
       <div className="meta-data"></div>
+      <hr />
     </div>
   )
 }

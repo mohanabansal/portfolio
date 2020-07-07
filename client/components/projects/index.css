@@ -50,7 +50,7 @@
   color: #3f5d8d;
   transition: 0.5s;
   height: 50px;
-  margin: 21.44px 0;
+  margin: 10px;
 }
 
 .btn:after,
@@ -74,7 +74,7 @@
 
 .links {
   margin-right: 20px;
-  margin-left: 34%;
+  margin-left: 26%;
 }
 
 .links span {
@@ -125,4 +125,11 @@
   font-size: 16px;
   font-weight: normal;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+hr {
+  text-align: center;
+  width: 75%;
+  height: 1px;
+  background-image: linear-gradient(90deg, #ccc, #333, #ccc);
 }
