@@ -6,7 +6,7 @@
 .resume-button {
   justify-content: center;
   display: flex;
-  margin-top: 25px;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
@@ -16,7 +16,8 @@
 }
 
 .resume-button button {
-  height: 35px;
+  background-color: #fff;
+  height: 50px;
   width: 165px;
   text-align: center;
   border-radius: 10px;
@@ -24,5 +25,7 @@
 }
 
 .resume-button button:hover {
-  opacity: 75%;
+  /* opacity: 75%; */
+  background-color: #e0eafc;
+  color: #253855;
 }
