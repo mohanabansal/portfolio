@@ -21,6 +21,12 @@
   font-size: 28px;
 }
 
+.linkedIn:hover,
+.github:hover,
+.email:hover {
+  color: #8f6682;
+}
+
 .social-media {
   display: flex;
   justify-content: center;
