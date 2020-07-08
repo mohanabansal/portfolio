@@ -4,7 +4,7 @@
 }
 
 .contact-subheading {
-  color: #efd2a9;
+  color: #3f5d8d;
   text-align: center;
   font-size: 32px;
 }
@@ -21,6 +21,12 @@
   font-size: 28px;
 }
 
+.linkedIn:hover,
+.github:hover,
+.email:hover {
+  color: #8f6682;
+}
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -29,18 +35,18 @@
 
 a {
   text-decoration: none;
-  color: #d8973c;
+  color: #253855;
   margin-right: 35px;
 }
 
 a span {
   vertical-align: super;
   padding-left: 5px;
-  color: #efffeb;
+  /* color: #efffeb; */
 }
 
 a span:hover {
-  color: #d8973c;
+  color: #8f6682;
   text-decoration: underline;
 }
 

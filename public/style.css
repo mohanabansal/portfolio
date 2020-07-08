@@ -1,7 +1,5 @@
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #17323a;
-  color: #efffeb;
   margin: 0;
 }
 
@@ -24,7 +22,8 @@ form div {
 }
 
 .heading {
-  color: #d8973c;
+  /* color: #d8973c; */
+  color: #253855;
   font-size: 50px;
   margin: 0;
 }

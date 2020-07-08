@@ -1,0 +1,163 @@
+#projects {
+  text-align: center;
+  margin: 50px 30px 0 30px;
+  font-size: 19px;
+}
+
+#projects .heading {
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #3f5d8d;
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.project-description {
+  display: flex;
+  text-align: left;
+}
+
+.project-description img {
+  border-radius: 0;
+  height: 280px;
+  width: 490px;
+}
+
+.description {
+  padding-right: 10px;
+  /* width: 52%; */
+}
+
+.heading-and-links {
+  display: flex;
+}
+
+.meta-data {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  position: relative;
+  font-size: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #3f5d8d;
+  transition: 0.5s;
+  height: 50px;
+  margin: 10px;
+}
+
+.btn:after,
+.btn:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  bottom: 0;
+  background-color: #eee5e9;
+  transition: 0.5s;
+}
+
+.btn:after {
+  left: 0;
+}
+
+.btn:before {
+  right: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0;
+}
+
+.links span {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #eee5e9;
+  z-index: -2;
+  transition: 0.5s;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  height: 100%;
+}
+
+.btn:hover > span {
+  height: 100%;
+}
+
+.btn a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 0 9% 0; */
+  /* height: 50px; */
+  line-height: 32px;
+  /* vertical-align: middle; */
+}
+
+.tech p {
+  margin: 0;
+  line-height: 50px;
+  color: #3f5d8d;
+  font-weight: bold;
+}
+
+.tech span {
+  background-color: #eee5e9;
+  color: #253855;
+  margin: 5px;
+  font-style: italic;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+hr {
+  text-align: center;
+  width: 75%;
+  height: 1px;
+  background-image: linear-gradient(90deg, #ccc, #333, #ccc);
+  margin: 2% auto;
+}
+
+#projects div:last-child hr {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-description {
+    flex-direction: column;
+  }
+
+  .project-description img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tech {
+    margin-bottom: 7.5%;
+  }
+}

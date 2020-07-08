@@ -2,24 +2,29 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 60px;
+  height: 90px;
   width: 100%;
-  background-color: #d8973c;
+  /* background-color: #d8973c; */
+  background-color: #8f6682;
   margin-bottom: 35px;
   font-size: 19px;
   text-align: end;
   position: fixed;
   overflow: hidden;
   top: 0;
+  z-index: 2;
+  margin-bottom: 50px;
 }
 
 #menu a {
-  color: #17323a;
+  /* color: #17323a; */
+  color: #fafaff;
 }
 
 #menu a:hover {
   text-decoration: underline;
-  color: #efffeb;
+  /* color: #efffeb; */
+  color: #d0c0b3;
 }
 
 html {
