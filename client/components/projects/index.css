@@ -23,13 +23,13 @@
 
 .project-description img {
   border-radius: 0;
-  height: 336px;
-  width: 590px;
+  height: 280px;
+  width: 490px;
 }
 
 .description {
   padding-right: 10px;
-  width: 52%;
+  /* width: 52%; */
 }
 
 .heading-and-links {
@@ -78,6 +78,10 @@
   justify-content: center;
 }
 
+.links a {
+  margin: 0;
+}
+
 .links span {
   position: absolute;
   width: 100%;
@@ -106,7 +110,7 @@
 .tech {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 9% 0;
   height: 50px;
   line-height: 50px;
   vertical-align: middle;
@@ -135,9 +139,25 @@ hr {
   width: 75%;
   height: 1px;
   background-image: linear-gradient(90deg, #ccc, #333, #ccc);
-  margin: 20px auto;
+  margin: 2% auto;
 }
 
 #projects div:last-child hr {
   display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-description {
+    flex-direction: column;
+  }
+
+  .project-description img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tech {
+    margin-bottom: 7.5%;
+  }
 }
