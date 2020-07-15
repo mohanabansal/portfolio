@@ -16,6 +16,10 @@
   margin-bottom: 50px;
 }
 
+#menu button {
+  display: none;
+}
+
 #menu a {
   /* color: #17323a; */
   color: #fafaff;
@@ -29,4 +33,40 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* #menu .open {
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-around;
+} */
+
+@media only screen and (max-width: 768px) {
+  #menu-open {
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #8f6682;
+    margin-bottom: 35px;
+    font-size: 19px;
+    text-align: end;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 50px;
+  }
+  #menu a {
+    display: none;
+  }
+
+  #menu button {
+    display: flex;
+    margin-right: 50px;
+    margin-left: auto;
+  }
 }
