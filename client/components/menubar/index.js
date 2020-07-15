@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaRegWindowClose} from 'react-icons/fa'
 import './index.css'
 
 class Menubar extends Component {
@@ -20,7 +20,11 @@ class Menubar extends Component {
     return (
       <div id={this.state.clicked ? 'menu-open' : 'menu'}>
         <button type="button" onClick={this.handleClick}>
-          <FaBars />
+          {!this.state.clicked ? (
+            <FaBars className="hamburger" />
+          ) : (
+            <FaRegWindowClose className="hamburger-close" />
+          )}
         </button>
         {/* <div className = "menu-items"> */}
         <a href="#">Home</a>

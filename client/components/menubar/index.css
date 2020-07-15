@@ -65,8 +65,34 @@ html {
   }
 
   #menu button {
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     margin-right: 50px;
     margin-left: auto;
+    background-color: #8f6682;
+    border: none;
+    outline: none;
+  }
+
+  .hamburger,
+  .hamburger-close {
+    /* background-color: #8f6682; */
+    color: #fafaff;
+    font-size: 28px;
+  }
+
+  #menu-open button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #8f6682;
+    border: none;
+    outline: none;
+  }
+
+  #menu-open a {
+    color: #fafaff;
   }
 }
