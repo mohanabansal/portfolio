@@ -42,8 +42,12 @@ html {
 } */
 
 @media only screen and (max-width: 768px) {
+  #menu {
+    height: 60px;
+  }
+
   #menu-open {
-    height: 200px;
+    /* height: 200px; */
     flex-direction: column;
     justify-content: space-around;
     display: flex;
@@ -66,8 +70,9 @@ html {
 
   #menu button {
     position: fixed;
-    top: 0;
-    right: 0;
+    /* top: 0; */
+    /* right: 0; */
+    padding-right: 20px;
     display: flex;
     margin-right: 50px;
     margin-left: auto;
@@ -85,8 +90,9 @@ html {
 
   #menu-open button {
     position: fixed;
-    top: 0;
+    top: 15px;
     right: 0;
+    padding-right: 20px;
     background-color: #8f6682;
     border: none;
     outline: none;
@@ -94,5 +100,12 @@ html {
 
   #menu-open a {
     color: #fafaff;
+    padding-bottom: 15px;
+  }
+
+  #menu-open .menu-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
   }
 }

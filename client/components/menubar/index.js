@@ -11,9 +11,14 @@ class Menubar extends Component {
   }
 
   handleClick = () => {
-    console.log('clicked')
     this.setState({
       clicked: !this.state.clicked,
+    })
+  }
+
+  handleMenuItemClick = () => {
+    this.setState({
+      clicked: false,
     })
   }
   render() {
@@ -27,10 +32,20 @@ class Menubar extends Component {
           )}
         </button>
         {/* <div className = "menu-items"> */}
-        <a href="#">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume</a>
+        <div className="menu-items">
+          <a href="#" onClick={this.handleMenuItemClick}>
+            Home
+          </a>
+          <a href="#projects" onClick={this.handleMenuItemClick}>
+            Projects
+          </a>
+          <a href="#contact" onClick={this.handleMenuItemClick}>
+            Contact
+          </a>
+          <a href="#resume" onClick={this.handleMenuItemClick}>
+            Resume
+          </a>
+        </div>
         {/* <a>
           <button type="button">Click</button>
         </a> */}
