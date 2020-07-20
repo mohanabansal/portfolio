@@ -45,7 +45,7 @@ const data = [
     id: 3,
     title: 'Portfolio',
     description:
-      'A responsive portfolio website, which gives an overview of myself and my journey so far. It is the website you are at right now. It is styled manually with HTML and CSS without any use of predefined CSS libraries.',
+      'Want to know more about me? This is the place. A responsive portfolio website, which gives a glimpse of myself and my journey so far. It is the website you are at right now. It is styled manually with HTML and CSS without any use of predefined CSS libraries.',
     tech: [
       'ReactJS',
       'Redux',
