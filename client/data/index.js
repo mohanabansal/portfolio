@@ -44,7 +44,8 @@ const data = [
   {
     id: 3,
     title: 'Portfolio',
-    description: 'Personal website',
+    description:
+      'Want to know more about me? This is the place. A responsive portfolio website, which gives a glimpse of myself and my journey so far. It is the website you are at right now. It is styled manually with HTML and CSS without any use of predefined CSS libraries.',
     tech: [
       'ReactJS',
       'Redux',
@@ -53,6 +54,9 @@ const data = [
       'HTML',
       'CSS',
     ],
+    img: '/portfolio_mockup.png',
+    website: 'https://mohanabansal.herokuapp.com/',
+    github: 'https://github.com/mohanabansal/portfolio/',
   },
 ]
 
