@@ -50,6 +50,59 @@ a span:hover {
   text-decoration: underline;
 }
 
+.quick-note {
+  display: flex;
+  flex-direction: column;
+  margin: 0 28%;
+}
+
+/* .quick-note input:first-child{
+  margin-top: 10px;
+} */
+
+.quick-note p {
+  color: #253855;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quick-note input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.quick-note textarea {
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.quick-note textarea::placeholder,
+.quick-note textarea,
+.quick-note input .quick-note input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.send-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button-container button {
+  background-color: #eee6ea;
+  height: 50px;
+  width: 165px;
+  text-align: center;
+  border-radius: 10px;
+  /* margin-right: 20px; */
+  font-weight: bold;
+}
+
+.send-button-container button:hover {
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 1024px) {
   .contact-description {
     margin: 25px 9%;
