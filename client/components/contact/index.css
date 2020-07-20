@@ -39,6 +39,10 @@ a {
   margin-right: 35px;
 }
 
+.social-media a:last-child {
+  margin-right: 0;
+}
+
 a span {
   vertical-align: super;
   padding-left: 5px;
@@ -95,8 +99,8 @@ a span:hover {
   width: 165px;
   text-align: center;
   border-radius: 10px;
-  /* margin-right: 20px; */
   font-weight: bold;
+  font-size: 14px;
 }
 
 .send-button-container button:hover {
