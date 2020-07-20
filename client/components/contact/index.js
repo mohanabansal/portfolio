@@ -85,9 +85,11 @@ class Contact extends Component {
             value={this.state.message}
             onChange={this.handleChange}
           ></textarea>
-          <button type="button" onClick={this.handleButtonClick}>
-            Send
-          </button>
+          <div className="send-button-container">
+            <button type="button" onClick={this.handleButtonClick}>
+              Send
+            </button>
+          </div>
         </div>
       </div>
     )
