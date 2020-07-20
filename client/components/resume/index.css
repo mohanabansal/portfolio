@@ -11,12 +11,16 @@
 }
 
 .resume-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   margin-right: 0px;
   font-weight: bold;
 }
 
 .resume-button button {
-  background-color: #fff;
+  background-color: #eee6ea;
   height: 50px;
   width: 165px;
   text-align: center;
@@ -26,6 +30,6 @@
 
 .resume-button button:hover {
   /* opacity: 75%; */
-  background-color: #f7f3f5;
+  background-color: #fff;
   color: #253855;
 }
