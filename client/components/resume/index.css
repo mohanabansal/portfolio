@@ -10,6 +10,12 @@
   flex-wrap: wrap;
 }
 
+.send-button-container button:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .resume-button a {
   display: flex;
   align-items: center;
@@ -21,7 +27,7 @@
 }
 
 .resume-button button {
-  background-color: #eee6ea;
+  background-color: #ecdbe4;
   height: 50px;
   width: 165px;
   text-align: center;
@@ -34,7 +40,6 @@
 }
 
 .resume-button button:hover {
-  /* opacity: 75%; */
   background-color: #fff;
   color: #253855;
 }

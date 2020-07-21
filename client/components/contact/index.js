@@ -14,32 +14,59 @@ class Contact extends Component {
       name: '',
       email: '',
       message: '',
+      emailClassName: '',
     }
   }
 
   handleChange = (e) => {
-    console.log(this.state)
     this.setState({
       [e.target.name]: e.target.value,
     })
   }
 
+  validateEmail = (emailaddress) => {
+    console.log('in validEmail')
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return re.test(String(emailaddress).toLowerCase())
+  }
+
   handleButtonClick = () => {
-    console.log('calling email')
-    email({
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-    })()
+    const validEmail = this.validateEmail(this.state.email.trim())
+
+    if (!validEmail) {
+      this.setState({emailClassName: 'invalidEmail'})
+    }
+
+    if (this.state.name.trim() && validEmail && this.state.message.trim()) {
+      email({
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      })()
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }
+  }
+
+  handleKeyPress = () => {
     this.setState({
-      name: '',
-      email: '',
-      message: '',
+      emailClassName: '',
     })
   }
 
   render() {
-    console.log('state', this.state)
+    let disabled = true
+    if (
+      this.state.name.trim() &&
+      this.state.email.trim() &&
+      this.state.message.trim()
+    ) {
+      disabled = false
+    }
+
     return (
       <div id="contact">
         <h1 className="heading">Let's connect</h1>
@@ -74,10 +101,12 @@ class Contact extends Component {
             onChange={this.handleChange}
           ></input>
           <input
+            className={this.state.emailClassName}
             placeholder="Email"
             name="email"
             value={this.state.email}
             onChange={this.handleChange}
+            onKeyPress={this.handleKeyPress}
           ></input>
           <textarea
             placeholder="Message"
@@ -86,7 +115,11 @@ class Contact extends Component {
             onChange={this.handleChange}
           ></textarea>
           <div className="send-button-container">
-            <button type="button" onClick={this.handleButtonClick}>
+            <button
+              type="button"
+              disabled={disabled}
+              onClick={this.handleButtonClick}
+            >
               Send
             </button>
           </div>

@@ -60,10 +60,6 @@ a span:hover {
   margin: 0 28%;
 }
 
-/* .quick-note input:first-child{
-  margin-top: 10px;
-} */
-
 .quick-note p {
   color: #253855;
   font-size: 19px;
@@ -71,7 +67,8 @@ a span:hover {
   margin-bottom: 5px;
 }
 
-.quick-note input {
+.quick-note input,
+.invalidEmail {
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -80,6 +77,38 @@ a span:hover {
   height: 100px;
   margin-bottom: 20px;
   padding: 10px;
+  border: 1px solid black;
+}
+
+.invalidEmail {
+  border: 1px solid red;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 .quick-note textarea::placeholder,
@@ -94,7 +123,7 @@ a span:hover {
 }
 
 .send-button-container button {
-  background-color: #eee6ea;
+  background-color: #ecdbe4;
   height: 50px;
   width: 165px;
   text-align: center;
