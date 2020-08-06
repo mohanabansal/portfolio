@@ -13,14 +13,12 @@ const Home = () => {
             <h2 className="designation">Front End Developer</h2>
           </div>
           <p className="bio">
-            I am a New York based Front End Developer, born and brought up in
-            India. After completing masters in Information Management from the
-            University of Maryland, College Park, I started my career as a Data
-            Analyst in a consulting firm. I was presented with a development
-            opportunity there and from that moment I wanted to be a Front End
-            Developer. To sharpen my skills I joined the Grace Hopper Bootcamp,
-            a 13 week immersive software development course. Having completed
-            it, I am ready to join a firm that is looking for collaborative and
+            I am a New York based Front End Developer with a background in Data
+            Analytics. I started my career as a Data Analyst in a consulting
+            firm, where I was presented with a development opportunity and from
+            that moment I wanted to be a Front End Developer. To sharpen my
+            skills I joined the Grace Hopper Bootcamp. Having completed it, I am
+            ready to join a firm that is looking for collaborative and
             passionate developers. Nothing gets me more excited than building,
             creating, and learning new technologies.
             {/* <div>
@@ -42,8 +40,23 @@ const Home = () => {
             </div> */}
           </p>
 
-          <div className="techstack">
-            <h2>Technologies I am into</h2>
+          <div className="tech">
+            <span>JavaScript(ES6)</span>
+            <span>React.JS</span>
+            <span>Redux</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Sequelize</span>
+            <span>PostgresSQL</span>
+            <span>RESTful API</span>
+            <span>Jest</span>
+            <span>Enzyme</span>
+            <span>Heroku</span>
+            <span>TDD</span>
+            <span>GIT</span>
+            {/* <h2>Technologies I am into</h2>
             <p>
               <span className="tech-heading">Language: </span>
               JavaScript(ES6)
@@ -63,7 +76,7 @@ const Home = () => {
             <p>
               <span className="tech-heading">Tools: </span>
               GIT, GitHub, npm, Visual Studio Code, Postman, Postico
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

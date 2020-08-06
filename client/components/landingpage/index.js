@@ -1,6 +1,7 @@
 import React from 'react'
 import Menubar from '../menubar'
 import Home from '../home'
+// import About from '../about'
 import Projects from '../projects'
 import Experience from '../experience'
 import Contact from '../contact'
@@ -12,6 +13,7 @@ const LandingPage = () => {
     <div>
       <Menubar />
       <Home />
+      {/* <About /> */}
       <Projects />
       <Experience />
       <Resume />
