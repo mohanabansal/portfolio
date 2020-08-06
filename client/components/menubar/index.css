@@ -35,6 +35,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.menu-left {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.menu-left img {
+  height: 40px;
+  width: 40px;
+}
+
 /* #menu .open {
   height: 200px;
   flex-direction: column;

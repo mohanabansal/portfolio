@@ -32,6 +32,9 @@ class Menubar extends Component {
           )}
         </button>
         {/* <div className = "menu-items"> */}
+        <div className="menu-left">
+          <img src="/brand.png" />
+        </div>
         <div className="menu-items">
           <a href="#" onClick={this.handleMenuItemClick}>
             Home
