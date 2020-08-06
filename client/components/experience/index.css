@@ -1,0 +1,22 @@
+#experience {
+  margin: 50px 30px 0 30px;
+}
+
+#experience .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.consultant-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.GS,
+.FBPH {
+  width: 30%;
+  margin: 20px 30px;
+  background-color: #eee6ea;
+  padding: 0 25px;
+}

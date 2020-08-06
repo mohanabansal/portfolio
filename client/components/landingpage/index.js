@@ -2,6 +2,7 @@ import React from 'react'
 import Menubar from '../menubar'
 import Home from '../home'
 import Projects from '../projects'
+import Experience from '../experience'
 import Contact from '../contact'
 import Resume from '../resume'
 import Footer from '../footer'
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Menubar />
       <Home />
       <Projects />
+      <Experience />
       <Resume />
       <Contact />
       <Footer />
