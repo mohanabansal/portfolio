@@ -39,6 +39,9 @@ class Menubar extends Component {
           <a href="#projects" onClick={this.handleMenuItemClick}>
             Projects
           </a>
+          <a href="#experience" onClick={this.handleMenuItemClick}>
+            Experience
+          </a>
           <a href="#contact" onClick={this.handleMenuItemClick}>
             Contact
           </a>
