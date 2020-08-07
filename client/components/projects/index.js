@@ -5,7 +5,10 @@ import './index.css'
 const Projects = () => {
   return (
     <div id="projects">
-      <h1 className="heading">Projects</h1>
+      {/* <h1>Projects</h1> */}
+      <div>
+        <h1 className="heading">Projects</h1>
+      </div>
       {data.map((project) => {
         return (
           <div key={project.id}>

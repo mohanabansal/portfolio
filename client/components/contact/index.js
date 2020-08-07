@@ -79,7 +79,7 @@ class Contact extends Component {
             <span>Email</span>
           </a>
         </div>
-        <div className="quick-note">
+        {/* <div className="quick-note">
           <p>Drop me a quick note</p>
           <input
             placeholder="Name"
@@ -108,7 +108,7 @@ class Contact extends Component {
               Send
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }
