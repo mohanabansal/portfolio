@@ -13,7 +13,7 @@
   font-size: 32px;
   text-align: left;
   margin-bottom: 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .project-description {
@@ -108,7 +108,7 @@
   margin: 0 10px;
 }
 
-.tech {
+.description .tech {
   display: flex;
   flex-wrap: wrap;
   /* margin: 0 0 9% 0; */
@@ -117,14 +117,18 @@
   /* vertical-align: middle; */
 }
 
-.tech p {
+.description .tech p {
   margin: 0;
   line-height: 50px;
   color: #3f5d8d;
   font-weight: bold;
 }
 
-.tech span {
+.tech div {
+  margin: 5px 0;
+}
+
+.description .tech span {
   background-color: #eee5e9;
   color: #253855;
   margin: 5px;

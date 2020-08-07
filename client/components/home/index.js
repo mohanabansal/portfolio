@@ -6,7 +6,23 @@ const Home = () => {
   return (
     <div id="home">
       <div className="container">
-        <img src="/headshot.png" />
+        <div>
+          <img src="/headshot.png" />
+          <div className="social-media">
+            <a href="https://www.linkedin.com/in/mohanabansal/" target="_blank">
+              <FaLinkedin className="linkedIn" />
+              <span>LinkedIn</span>
+            </a>
+            <a href="http://github.com/mohanabansal/" target="_blank">
+              <FaGithub className="github" />
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:mohanabansal10@gmail.com" target="_blank">
+              <FaRegEnvelopeOpen className="email" />
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
         <div className="name-description">
           <div className="name-designation">
             <h1 className="heading">Mohana Bansal</h1>
