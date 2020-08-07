@@ -14,6 +14,9 @@ class Contact extends Component {
       name: '',
       email: '',
       message: '',
+      // nameValidation: 'noError',
+      // emailValidation: 'noError',
+      // messageValidation: 'noError'
     }
   }
 
@@ -26,20 +29,31 @@ class Contact extends Component {
 
   handleButtonClick = () => {
     console.log('calling email')
-    email({
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-    })()
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-    })
+    if (
+      this.state.name.trim() &&
+      this.state.email.trim() &&
+      this.state.message.trim()
+    ) {
+      email({
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      })()
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }
   }
 
   render() {
-    console.log('state', this.state)
+    const disabled =
+      this.state.name.trim().length !== 0 &&
+      this.state.email.trim().length !== 0 &&
+      this.state.message.trim().length !== 0
+
+    console.log('disabled', disabled)
     return (
       <div id="contact">
         <h1 className="heading">Let's connect</h1>
@@ -65,7 +79,7 @@ class Contact extends Component {
             <span>Email</span>
           </a>
         </div>
-        <div className="quick-note">
+        {/* <div className="quick-note">
           <p>Drop me a quick note</p>
           <input
             placeholder="Name"
@@ -86,11 +100,15 @@ class Contact extends Component {
             onChange={this.handleChange}
           ></textarea>
           <div className="send-button-container">
-            <button type="button" onClick={this.handleButtonClick}>
+            <button
+              type="button"
+              disabled={!disabled}
+              onClick={this.handleButtonClick}
+            >
               Send
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }

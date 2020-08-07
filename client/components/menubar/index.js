@@ -32,21 +32,24 @@ class Menubar extends Component {
           )}
         </button>
         {/* <div className = "menu-items"> */}
+        <div className="menu-left">
+          <img src="/brand.png" />
+        </div>
         <div className="menu-items">
-          <a href="#" onClick={this.handleMenuItemClick}>
+          <a href="/#" onClick={this.handleMenuItemClick}>
             Home
           </a>
-          <a href="#projects" onClick={this.handleMenuItemClick}>
+          <a href="/#projects" onClick={this.handleMenuItemClick}>
             Projects
           </a>
-          <a href="#experience" onClick={this.handleMenuItemClick}>
+          <a href="/#experience" onClick={this.handleMenuItemClick}>
             Experience
           </a>
-          <a href="#contact" onClick={this.handleMenuItemClick}>
-            Contact
-          </a>
-          <a href="#resume" onClick={this.handleMenuItemClick}>
+          <a href="/#resume" onClick={this.handleMenuItemClick}>
             Resume
+          </a>
+          <a href="/#contact" onClick={this.handleMenuItemClick}>
+            Contact
           </a>
         </div>
         {/* <a>
