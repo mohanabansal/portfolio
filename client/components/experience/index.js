@@ -8,6 +8,10 @@ const Experience = () => {
         <h1 className="heading">Experience</h1>
         <h2>Publicis.Sapient - January 2018 - Aug 2019</h2>
         <h2>Front End Developer</h2>
+        <p>
+          I have worked for 1.5 year as a Front End Developer Consultant. During
+          that time I worked on the following 2 projects:
+        </p>
         <div className="consultant-container">
           <div className="GS">
             <h3>Consultant at Goldman Sachs</h3>

@@ -171,6 +171,9 @@ hr {
   /* .project-description {
     text-align: center;
   } */
+  #projects .heading {
+    margin-bottom: 30px;
+  }
 
   .project-description img {
     width: 315px;
