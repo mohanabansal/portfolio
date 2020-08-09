@@ -1,6 +1,7 @@
 #contact .heading {
-  margin: 50px 30px 0 30px;
+  margin: 0 30px 0 30px;
   text-align: center;
+  padding-top: 80px;
 }
 
 .contact-subheading {
@@ -46,7 +47,6 @@ a {
 a span {
   vertical-align: super;
   padding-left: 5px;
-  /* color: #efffeb; */
 }
 
 a span:hover {
@@ -59,10 +59,6 @@ a span:hover {
   flex-direction: column;
   margin: 0 28%;
 }
-
-/* .quick-note input:first-child{
-  margin-top: 10px;
-} */
 
 .quick-note p {
   color: #253855;
@@ -118,7 +114,7 @@ a span:hover {
 
 @media only screen and (max-width: 768px) {
   #contact .heading {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .contact-description {
