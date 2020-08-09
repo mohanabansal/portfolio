@@ -4,7 +4,6 @@
   align-items: center;
   height: 90px;
   width: 100%;
-  /* background-color: #d8973c; */
   background-color: #8f6682;
   margin-bottom: 35px;
   font-size: 19px;
@@ -21,13 +20,11 @@
 }
 
 #menu a {
-  /* color: #17323a; */
   color: #fafaff;
 }
 
 #menu a:hover {
   text-decoration: underline;
-  /* color: #efffeb; */
   color: #d0c0b3;
 }
 
@@ -45,19 +42,12 @@ html {
   width: 40px;
 }
 
-/* #menu .open {
-  height: 200px;
-  flex-direction: column;
-  justify-content: space-around;
-} */
-
 @media only screen and (max-width: 768px) {
   #menu {
     height: 60px;
   }
 
   #menu-open {
-    /* height: 200px; */
     flex-direction: column;
     justify-content: space-around;
     display: flex;
@@ -80,8 +70,6 @@ html {
 
   #menu button {
     position: fixed;
-    /* top: 0; */
-    /* right: 0; */
     padding-right: 20px;
     display: flex;
     margin-right: 50px;
@@ -93,7 +81,6 @@ html {
 
   .hamburger,
   .hamburger-close {
-    /* background-color: #8f6682; */
     color: #fafaff;
     font-size: 28px;
   }
@@ -113,9 +100,15 @@ html {
     padding-bottom: 15px;
   }
 
+  #menu-open a:hover {
+    text-decoration: underline;
+    color: #d0c0b3;
+  }
+
   #menu-open .menu-items {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
   }
 }
