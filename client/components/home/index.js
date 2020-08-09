@@ -96,7 +96,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className = "bar"></div> */}
     </div>
   )
 }
