@@ -8,6 +8,25 @@
   padding-top: 80px;
 }
 
+.company {
+  display: flex;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.period {
+  margin-left: auto;
+  /* font-style: italic; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .company-designation {
+  font-style: italic;
+} */
+
 .consultant-container {
   display: flex;
   flex-direction: row;
@@ -34,6 +53,14 @@
   #experience .heading {
     margin-bottom: 30px;
     padding-top: 50px;
+  }
+
+  .company {
+    flex-direction: column;
+  }
+
+  .period {
+    margin-left: 0;
   }
 
   .GS,

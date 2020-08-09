@@ -6,8 +6,11 @@ const Experience = () => {
     <div id="experience">
       <div>
         <h1 className="heading">Experience</h1>
-        <h2>Publicis.Sapient - January 2018 - Aug 2019</h2>
-        <h2>Front End Developer</h2>
+        <h2 className="company">
+          <p className="company-name">Publicis.Sapient</p>{' '}
+          <p className="period">January 2018 - Aug 2019</p>
+        </h2>
+        <h2 className="company-designation">Front End Developer</h2>
         <p>
           I have worked for 1.5 year as a Front End Developer Consultant. During
           that time I worked on the following 2 projects:
