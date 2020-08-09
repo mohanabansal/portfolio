@@ -14,8 +14,8 @@ module.exports = {
     }),
     new S3Plugin({
       s3Options: {
-        accessKeyId: 'AKIA4AXTNGQTSWPFG6RF', // Your AWS access key
-        secretAccessKey: 'VHRqTZM0K8Z1rvc0amFz76ZwGCanh4dE43mTTgIQ', // Your AWS secret key
+        accessKeyId: process.env.accessKeyId, // Your AWS access key
+        secretAccessKey: process.env.secretAccessKey, // Your AWS secret key
         region: 'us-east-2', // The region of your S3 bucket
       },
       s3UploadOptions: {
