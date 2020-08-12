@@ -58,15 +58,16 @@ const Home = () => {
 
           <div className="tech">
             <span>JavaScript(ES6)</span>
-            <span>React.JS</span>
+            <span>ReactJS</span>
             <span>Redux</span>
             <span>HTML</span>
             <span>CSS</span>
-            <span>Node.js</span>
+            <span>NodeJS</span>
             <span>Express</span>
             <span>Sequelize</span>
             <span>PostgresSQL</span>
             <span>RESTful API</span>
+            <span>Socket.io</span>
             <span>Jest</span>
             <span>Enzyme</span>
             <span>Heroku</span>
