@@ -23,7 +23,7 @@ module.exports = {
               region: 'us-east-2', // The region of your S3 bucket
             },
             s3UploadOptions: {
-              Bucket: 'mbansal.net', // Your bucket name
+              Bucket: 'mbansal.info', // Your bucket name
               // Here we set the Content-Encoding header for all the gzipped files to 'gzip'
               ContentEncoding(fileName) {
                 if (/\.gz/.test(fileName)) {
