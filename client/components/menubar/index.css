@@ -4,7 +4,8 @@
   align-items: center;
   height: 90px;
   width: 100%;
-  background-color: #8f6682;
+  /* background-color: #8f6682; */
+  background-color: #283a53;
   margin-bottom: 35px;
   font-size: 19px;
   text-align: end;
@@ -25,7 +26,8 @@
 
 #menu a:hover {
   text-decoration: underline;
-  color: #d0c0b3;
+  /* color: #d0c0b3; */
+  color: #7baecc;
 }
 
 html {

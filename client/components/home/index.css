@@ -108,7 +108,8 @@ h2 {
 }
 
 .tech span {
-  background-color: #eee5e9;
+  /* background-color: #eee5e9; */
+  background-color: #e0fbfc;
   color: #253855;
   margin: 5px;
   font-style: italic;
