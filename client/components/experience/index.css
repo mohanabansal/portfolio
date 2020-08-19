@@ -12,20 +12,31 @@
   display: flex;
 }
 
+.company-details {
+  display: flex;
+}
+
 .company-name {
   margin: 0;
 }
 
 .period {
   margin-left: auto;
-  /* font-style: italic; */
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* .company-designation {
+.company-designation {
   font-style: italic;
-} */
+  margin: 0;
+}
+
+.company-designation::before {
+  content: ' - ';
+}
 
 .consultant-container {
   display: flex;
@@ -38,7 +49,7 @@
 .FBPH {
   width: 35%;
   margin: 20px 30px;
-  background-color: #eee6ea;
+  background-color: #c3dbe9;
   padding: 0 25px;
 }
 
@@ -57,6 +68,18 @@
 
   .company {
     flex-direction: column;
+  }
+
+  .company-details {
+    flex-direction: column;
+  }
+
+  .company-designation {
+    font-size: 20px;
+  }
+
+  .company-designation::before {
+    content: '';
   }
 
   .period {

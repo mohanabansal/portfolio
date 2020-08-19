@@ -20,12 +20,14 @@
 .github,
 .email {
   font-size: 28px;
+  color: #283a53;
 }
 
 .linkedIn:hover,
 .github:hover,
 .email:hover {
-  color: #8f6682;
+  /* color: #8f6682; */
+  color: #7baecc;
 }
 
 .social-media {
@@ -36,7 +38,7 @@
 
 a {
   text-decoration: none;
-  color: #253855;
+  color: #283a53;
   margin-right: 35px;
 }
 
@@ -50,7 +52,8 @@ a span {
 }
 
 a span:hover {
-  color: #8f6682;
+  /* color: #8f6682; */
+  color: #7baecc;
   text-decoration: underline;
 }
 

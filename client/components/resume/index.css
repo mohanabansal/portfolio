@@ -22,7 +22,8 @@
 }
 
 .resume-button button {
-  background-color: #eee6ea;
+  /* background-color: #eee6ea; */
+  background-color: #d3e4ee;
   height: 50px;
   width: 165px;
   text-align: center;
@@ -35,7 +36,11 @@
 }
 
 .resume-button button:hover {
+  /* background-color: #fff; */
+  /* opacity: 80%; */
+  border: 0px;
   background-color: #fff;
+  box-shadow: 0 0 10px 0 #7baecc inset, 0 0 10px 4px #7baecc;
   color: #253855;
 }
 
