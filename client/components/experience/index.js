@@ -10,7 +10,7 @@ const Experience = () => {
           <div className="company-details">
             <p className="company-name">Publicis.Sapient </p>
             {'  '}
-            <p className="company-designation"> - Front End Developer</p>
+            <p className="company-designation">Front End Developer</p>
           </div>
           <p className="period">January 2018 - Aug 2019</p>
         </h2>

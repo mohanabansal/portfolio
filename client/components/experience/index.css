@@ -34,6 +34,10 @@
   margin: 0;
 }
 
+.company-designation::before {
+  content: ' - ';
+}
+
 .consultant-container {
   display: flex;
   flex-direction: row;
@@ -64,6 +68,18 @@
 
   .company {
     flex-direction: column;
+  }
+
+  .company-details {
+    flex-direction: column;
+  }
+
+  .company-designation {
+    font-size: 20px;
+  }
+
+  .company-designation::before {
+    content: '';
   }
 
   .period {
